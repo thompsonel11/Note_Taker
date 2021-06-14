@@ -10,14 +10,9 @@ const path = require('path');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'));
 app.use(express.json());
-app.get('/api/notes', (req,res) => {
- res.json(database);
- //what the response to user will contain
-})
 
+require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
-
-
   
 
 // Listen to PORT
