@@ -31,7 +31,10 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ```
 
 ## Project Link
+Deployed Application: 
 https://liz-notetaker.herokuapp.com/
+
+GitHub Repository: 
 https://github.com/thompsonel11/Note_Taker
 
 ## Usage
