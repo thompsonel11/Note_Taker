@@ -3,16 +3,14 @@ const { nanoid } = require('nanoid');
 const fs = require('fs')
 
 module.exports = (app) => {
-    // app.get('api/notes', (req,res) => res.json(noteData));
     app.get('/api/notes', (req,res) => {
     res.json(noteData);
-    // what the response to user will contain
     })
 
     app.post('/api/notes', (req,res) => {
         console.log(noteData);
         console.log(req.body);
-        // adds ID onto the req.body
+        // adds ID onto the req.body utiliing nanoid npm package
         req.body.id = nanoid(10);
         noteData.push(req.body);
         console.log(noteData);
